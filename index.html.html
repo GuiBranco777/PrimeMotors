@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prime Motors | Concessionária Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="roupa.css" media="screen">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+PRIME<span>MOTORS</span>
+</div>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#estoque">Estoque</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</nav>
+
+</div>
+
+</header>
+
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<h1>
+O futuro do <span>luxo automotivo</span>
+</h1>
+
+<p>
+Veículos premium, esportivos e exclusivos para clientes exigentes.
+Experiência sofisticada, atendimento personalizado e condições especiais.
+</p>
+
+<div class="buttons">
+
+<a href="#estoque" class="btn btn-gold">
+Ver Estoque
+</a>
+
+<a href="#contato" class="btn btn-dark">
+Falar com Consultor
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ESTOQUE -->
+
+<section class="section" id="estoque">
+
+<div class="section-title">
+
+<h2>Veículos em Destaque</h2>
+
+<p>
+Uma coleção exclusiva de carros premium selecionados para quem busca sofisticação e desempenho.
+</p>
+
+</div>
+
+<div class="grid">
+
+<!-- CARD -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=2070&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>BMW M4 Competition</h3>
+
+<div class="price">
+R$ 689.900
+</div>
+
+<div class="specs">
+<span>2025</span>
+<span>510cv</span>
+<span>Automático</span>
+</div>
+
+<button class="btn btn-gold card-btn" onclick="showCar('BMW M4 Competition','R$ 689.900','Motor 3.0 biturbo com 510cv, bancos em couro premium, teto solar panorâmico e pacote M Performance.')">
+Tenho Interesse
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Porsche 911 Turbo S</h3>
+
+<div class="price">
+R$ 1.490.000
+</div>
+
+<div class="specs">
+<span>2025</span>
+<span>650cv</span>
+<span>0-100 em 2.7s</span>
+</div>
+
+<button class="btn btn-gold card-btn" onclick="showCar('Porsche 911 Turbo S','R$ 1.490.000','Superesportivo premium com acabamento exclusivo, suspensão inteligente e tecnologia de pista.')">
+Tenho Interesse
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=1974&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Mercedes AMG GT</h3>
+
+<div class="price">
+R$ 1.150.000
+</div>
+
+<div class="specs">
+<span>2025</span>
+<span>585cv</span>
+<span>Turbo V8</span>
+</div>
+
+<button class="btn btn-gold card-btn" onclick="showCar('Mercedes AMG GT','R$ 1.150.000','Modelo AMG com acabamento esportivo, painel digital inteligente e som premium Burmester.')">
+Tenho Interesse
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SOBRE -->
+
+<section class="section" id="sobre">
+
+<div class="about">
+
+<img src="https://tcct.com/wp-content/uploads/2022/03/9-1991-Ferrari-F40.jpg">
+
+<div class="about-text">
+
+<h2>
+Excelência em cada detalhe
+</h2>
+
+<p>
+A Prime Motors é referência em veículos premium e esportivos.
+Nosso showroom oferece atendimento exclusivo, veículos selecionados e experiência diferenciada.
+</p>
+
+<p>
+Mais de 15 anos oferecendo luxo, tecnologia e performance para clientes exigentes em todo o Brasil.
+</p>
+
+<a href="#contato" class="btn btn-gold">
+Agendar Visita
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTATO -->
+
+<section class="section" id="contato">
+
+<div class="contact-box">
+
+<h2>Entre em Contato</h2>
+
+<p>
+Preencha o formulário abaixo e nossa equipe entrará em contato rapidamente.
+</p>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Seu nome" required>
+
+<input type="email" id="email" placeholder="Seu e-mail" required>
+
+<input type="tel" id="phone" placeholder="Seu telefone" required>
+
+<textarea id="message" placeholder="Qual carro você procura?" required></textarea>
+
+<button class="btn btn-gold" type="submit">
+Enviar Mensagem
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalText"></p>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 PRIME MOTORS — Todos os direitos reservados.
+
+</footer>
+
+<script src="funcao.js"></script>
+
+</body>
+</html>
